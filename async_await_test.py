@@ -11,13 +11,13 @@ import asyncio
 
 async def hello():
     print('are u ok? (%s)' % threading.currentThread())
-    r = await asyncio.sleep(2)
+    await asyncio.sleep(2)
     print('am ok (%s)' % threading.currentThread())
 
 
 async def nihao():
     print('你好吗 (%s)' % threading.currentThread())
-    r = await asyncio.sleep(4)
+    await asyncio.sleep(4)
     print('我很好 (%s)' % threading.currentThread())
 
 
