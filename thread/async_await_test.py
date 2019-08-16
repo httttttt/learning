@@ -23,5 +23,5 @@ async def nihao():
 
 task = [hello(), nihao()]
 loop = asyncio.get_event_loop()
-loop.run_until_complete(asyncio.wait(task))
+loop.run_until_complete(i)
 loop.close()
